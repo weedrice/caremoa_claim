@@ -1,4 +1,4 @@
-package comskcc.caremoa.model;
+package com.skcc.caremoa.model;
 
 public enum ClaimStatus {
     APPLY,

@@ -1,6 +1,5 @@
 package comskcc.caremoa.model;
 
-import comskcc.caremoa.model.entity.CareReviewContentsEntity;
 import comskcc.caremoa.model.entity.ClaimEntity;
 import java.sql.Timestamp;
 import lombok.AllArgsConstructor;

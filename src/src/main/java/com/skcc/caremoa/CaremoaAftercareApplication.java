@@ -1,4 +1,4 @@
-package comskcc.caremoa;
+package com.skcc.caremoa;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

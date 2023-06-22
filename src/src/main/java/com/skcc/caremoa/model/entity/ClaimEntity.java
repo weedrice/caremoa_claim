@@ -1,4 +1,4 @@
-package comskcc.caremoa.model.entity;
+package com.skcc.caremoa.model.entity;
 
 import comskcc.caremoa.model.ClaimStatus;
 import comskcc.caremoa.model.ClaimType;

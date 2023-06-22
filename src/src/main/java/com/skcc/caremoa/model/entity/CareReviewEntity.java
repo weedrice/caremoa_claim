@@ -1,4 +1,4 @@
-package comskcc.caremoa.model.entity;
+package com.skcc.caremoa.model.entity;
 
 import comskcc.caremoa.model.ReviewType;
 import java.sql.Timestamp;

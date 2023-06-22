@@ -1,4 +1,4 @@
-package comskcc.caremoa.controller;
+package com.skcc.caremoa.controller;
 
 import comskcc.caremoa.controller.request.ClaimCreateRequest;
 import comskcc.caremoa.controller.response.ClaimResponse;

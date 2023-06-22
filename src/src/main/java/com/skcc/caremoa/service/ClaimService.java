@@ -6,7 +6,6 @@ import comskcc.caremoa.exception.ErrorCode;
 import comskcc.caremoa.model.Claim;
 import comskcc.caremoa.model.ClaimStatus;
 import comskcc.caremoa.model.ReviewType;
-import comskcc.caremoa.model.entity.CareReviewContentsEntity;
 import comskcc.caremoa.model.entity.CareReviewEntity;
 import comskcc.caremoa.model.entity.ClaimEntity;
 import comskcc.caremoa.repository.CareReviewEntityRepository;
