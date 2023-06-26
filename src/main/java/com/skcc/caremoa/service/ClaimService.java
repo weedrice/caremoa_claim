@@ -5,7 +5,6 @@ import com.skcc.caremoa.exception.CareReviewException;
 import com.skcc.caremoa.exception.ErrorCode;
 import com.skcc.caremoa.model.Claim;
 import com.skcc.caremoa.model.ClaimStatus;
-import com.skcc.caremoa.model.ClaimType;
 import com.skcc.caremoa.model.ReviewType;
 import com.skcc.caremoa.model.entity.CareReviewEntity;
 import com.skcc.caremoa.model.entity.ClaimEntity;
@@ -30,7 +29,6 @@ public class ClaimService {
     }
 
     public void create(Long reviewId, ClaimCreateRequest claimCreateRequest) {
-        // ClaimEntity claimEntity = getClaimByReviewId(reviewId);
         CareReviewEntity careReviewEntity = getCareReviewByReviewId(reviewId);
 
         claimRepository.save(ClaimEntity.of(reviewId, ClaimStatus.APPLY, claimCreateRequest.getClaimType()));
