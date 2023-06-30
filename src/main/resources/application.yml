@@ -100,6 +100,8 @@ spring:
 
 server:
   port: 8080
+  servlet:
+    contextPath: /claim
 
 # Jasypt
 jasypt:
