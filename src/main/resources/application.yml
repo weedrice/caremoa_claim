@@ -21,7 +21,7 @@ springdoc:
 
 api:  # Swagger UI Information
   info:
-    title: CareMoa Helper Service API
+    title: CareMoa Claim Service API
     description: API to fetch CareMoa Claim
     version: 1.0.0
     terms-of-service: http://caremoa.com/terms/
