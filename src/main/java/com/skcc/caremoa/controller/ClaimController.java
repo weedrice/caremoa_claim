@@ -24,9 +24,9 @@ public class ClaimController {
         return Response.success();
     }*/
 
-    @PostMapping("/{contId}")
-    public Response<Void> create(@PathVariable Long contId, @RequestBody ClaimCreateRequest claimCreateRequest) {
-        claimService.create(contId, claimCreateRequest);
+    @PostMapping
+    public Response<Void> create(@RequestBody ClaimCreateRequest claimCreateRequest) {
+        claimService.create(claimCreateRequest);
         return Response.success();
     }
 

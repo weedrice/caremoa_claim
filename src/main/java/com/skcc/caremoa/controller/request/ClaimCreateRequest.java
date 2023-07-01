@@ -11,6 +11,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class ClaimCreateRequest {
     private Long id;
+    private Long contId;
     private Long reviewId;
     private ClaimStatus claimStatus;
     private ClaimType claimType;

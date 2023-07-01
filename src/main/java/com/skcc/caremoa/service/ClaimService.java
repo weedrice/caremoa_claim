@@ -29,8 +29,8 @@ public class ClaimService {
                 new CareReviewException(ErrorCode.REVIEW_NOT_FOUND, String.format("%s not founded", reviewId)));
     }
 
-    public void create(Long contId, ClaimCreateRequest claimCreateRequest) {
-        CareReviewEntity careReviewEntity = createCareReviewEntity(contId);
+    public void create(ClaimCreateRequest claimCreateRequest) {
+        CareReviewEntity careReviewEntity = createCareReviewEntity(claimCreateRequest.getContId());
 
         claimRepository.save(ClaimEntity.of(careReviewEntity.getId(), ClaimStatus.APPLY, ClaimType.CONTENTS, claimCreateRequest.getClaimContents()));
     }
