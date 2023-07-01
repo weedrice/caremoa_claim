@@ -18,9 +18,15 @@ public class ClaimController {
         return Response.success(ClaimResponse.fromClaim(claimService.getByReviewId(reviewId)));
     }
 
-    @PostMapping("/{reviewId}")
+    /*@PostMapping("/{reviewId}")
     public Response<Void> create(@PathVariable Long reviewId, @RequestBody ClaimCreateRequest claimCreateRequest) {
         claimService.create(reviewId, claimCreateRequest);
+        return Response.success();
+    }*/
+
+    @PostMapping("/{contId}")
+    public Response<Void> create(@PathVariable Long contId, @RequestBody ClaimCreateRequest claimCreateRequest) {
+        claimService.create(contId, claimCreateRequest);
         return Response.success();
     }
 

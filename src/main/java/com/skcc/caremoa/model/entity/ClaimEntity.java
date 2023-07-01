@@ -34,6 +34,9 @@ public class ClaimEntity {
     @Enumerated(EnumType.STRING)
     private ClaimType claimType;
 
+    @Column(name = "claimContents")
+    private String claimContents;
+
     @Column(name ="registered_at")
     private Timestamp registeredAt;
 
@@ -53,11 +56,12 @@ public class ClaimEntity {
         this.updatedAt = Timestamp.from(Instant.now());
     }
 
-    public static ClaimEntity of(Long reviewId, ClaimStatus claimStatus, ClaimType claimType) {
+    public static ClaimEntity of(Long reviewId, ClaimStatus claimStatus, ClaimType claimType, String claimContents) {
         ClaimEntity claimEntity = new ClaimEntity();
         claimEntity.setReviewId(reviewId);
         claimEntity.setClaimStatus(claimStatus);
         claimEntity.setClaimType(claimType);
+        claimEntity.setClaimContents(claimContents);
 
         return claimEntity;
     }

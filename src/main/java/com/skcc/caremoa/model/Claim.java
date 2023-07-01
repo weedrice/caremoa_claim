@@ -13,6 +13,7 @@ public class Claim {
     private Long reviewId;
     private ClaimStatus claimStatus;
     private ClaimType claimType;
+    private String claimContents;
     private Timestamp registeredAt;
     private Timestamp updatedAt;
     private Timestamp deletedAt;
@@ -23,6 +24,7 @@ public class Claim {
                 claimEntity.getReviewId(),
                 claimEntity.getClaimStatus(),
                 claimEntity.getClaimType(),
+                claimEntity.getClaimContents(),
                 claimEntity.getRegisteredAt(),
                 claimEntity.getUpdatedAt(),
                 claimEntity.getDeletedAt()

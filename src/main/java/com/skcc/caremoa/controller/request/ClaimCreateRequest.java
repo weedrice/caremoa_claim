@@ -14,4 +14,5 @@ public class ClaimCreateRequest {
     private Long reviewId;
     private ClaimStatus claimStatus;
     private ClaimType claimType;
+    private String claimContents;
 }
